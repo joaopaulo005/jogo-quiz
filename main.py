@@ -1,7 +1,7 @@
 from unidecode import unidecode
 
 def rodar_quiz():
-    #lista de perguntas e respostas
+
     perguntas = [
         {'pergunta': 'Qual time tem o escudo mais bonito do mundo?', 'resposta': 'Botafogo'},
         {'pergunta': 'Qual o maior planeta do sistema solar?', 'resposta': 'Júpiter'},
@@ -15,14 +15,12 @@ def rodar_quiz():
         {'pergunta': 'Qual é o país mais populoso do mundo?', 'resposta': 'China'},
     ]
      
-    #variavel para armazenar a pontuação
     pontuacao = 0
 
     for item in perguntas:
         print(item['pergunta'])
         resposta_player = input('Sua resposta: ')
 
-    #verificar a resposta
         if unidecode(resposta_player.upper()) == unidecode(item['resposta'].upper()):
             print('Resposta Correta!\n')
             pontuacao += 1
