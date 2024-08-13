@@ -110,7 +110,9 @@ def rodar_quiz():
      
     random.shuffle(perguntas)
 
+    print('==#' * 30)
     print('Bem vindo ao Veio porque Quiz! Responda as perguntas corretamente para ganhar pontos.')
+    print('==#' * 30)
 
     pontuacao = 0
 
